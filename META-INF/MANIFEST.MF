@@ -1,0 +1,15 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: TeachingManagementSystem
+Bundle-SymbolicName: TeachingManagementSystem
+Bundle-Version: 1.0.0.qualifier
+Bundle-ClassPath: TeachingManagementSystem.jar,
+ yexin_/software/jstl.jar,
+ yexin_/software/ojdbc6.jar,
+ yexin_/software/standard.jar
+Export-Package: com.iweb.DAO,
+ com.iweb.entity,
+ com.iweb.servlet.classroom,
+ com.iweb.servlet.course,
+ com.iweb.servlet.grade,
+ com.iweb.servlet.teacher

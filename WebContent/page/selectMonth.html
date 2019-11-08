@@ -1,0 +1,46 @@
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<title>title</title>
+	
+	<style>
+	
+	input {
+	background-color: #00BFFF;
+    border: none;
+    color: white;
+    padding: 6px 10px;
+    text-align: center;
+    border-radius:25px;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+	}
+	#t{
+		width:40px;
+	}
+	</style>
+
+</head>
+
+<body>
+	
+	<form action="/TeachingManagementSystem/ScheduleServlet" method="POST">
+		请选择需要排课的月份数：<br/><br/>
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		<select name="months" id="t">
+			<option value="3">3</option>
+			<option value="4">4</option>
+			<option value="5">5</option>
+			<option value="6">6</option>
+		</select>
+		&nbsp;&nbsp;&nbsp;&nbsp;
+		<input type="submit" >
+	</form>
+	
+
+</body>
+</html>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE sqlMap PUBLIC "-//ibatis.apache.org//DTD SQL Map 2.0//EN" 
+	"http://ibatis.apache.org/dtd/sql-map-2.dtd">
+
+<sqlMap>
+	<typeAlias type="com.iweb.entity.Note" alias="Note" />
+	<typeAlias type="java.lang.String" alias="String" />
+	<typeAlias type="java.util.Map" alias="Map" />
+
+
+
+	<insert id="note.add" parameterClass="Note">
+		insert into note
+		values(seq_note_noteno.nextval,#notetime#, #notedata#, #notegrade#)
+	</insert>
+
+	<select id="note.list" resultClass="Note" parameterClass="String">
+		select * from note where notegrade = #notegrade#
+	</select>
+
+	<select id="note.select" parameterClass="String"
+		resultClass="String">
+		select notedata from note where notetime=#notetime#
+	</select>
+
+	<update id="note.modify" parameterClass="Note">
+		update note set notedata = #notedata# where notetime=#notetime#
+	</update>
+
+	<delete id = "note.remove" parameterClass="String">
+		delete from note where notetime=#notetime#
+	</delete>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+
+</sqlMap>

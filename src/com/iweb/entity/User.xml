@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE sqlMap PUBLIC "-//ibatis.apache.org//DTD SQL Map 2.0//EN" 
+	"http://ibatis.apache.org/dtd/sql-map-2.dtd">
+
+<sqlMap>
+	<typeAlias type="com.iweb.entity.User" alias="User" />
+	<typeAlias type="java.lang.String" alias="String" />
+	<typeAlias type="java.util.Map" alias="Map" />
+
+	<select id="user.exist" parameterClass="String"
+		resultClass="int">
+		select count(1) from t_user where uname = #uname#
+	</select>
+
+	<insert id="user.add" parameterClass="User">
+		insert into t_user values(seq_user_uno.nextval, #uname#,
+		#pwd#, #position#, #uclass#)
+	</insert>
+
+
+
+</sqlMap>

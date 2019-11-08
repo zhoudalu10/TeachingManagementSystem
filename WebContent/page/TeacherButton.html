@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<title>教师信息管理中心</title>
+	<style type="text/css">
+		li {
+			/*取消项目符号，并水平摆放*/
+			list-style: none;
+			display: inline-block;
+			float: left;
+			width: 572px;
+			/*背景色，圆角矩形*/
+			
+			border: 0px solid;
+			border-radius: 3px;
+			text-align: center;
+		}
+
+		a{ 
+			background-color:opacity;
+			padding: 8px 50px 8px 50px;
+			font-size: 15px;
+			border-radius: 4px;
+			white-space: nowrap;
+			font-weight: 400;
+			color: #000;
+			background: #26c6da;
+			text-decoration: none;
+		}
+
+		a.litem-1:hover,
+		a.litem-2:hover {
+			background:  #AFEEEE;
+		}
+	</style>
+</head>
+
+<body>
+	<ul class="list">
+		<li >
+			<a class="litem-1" href="/TeachingManagementSystem/TeacherListServlet" target="roomcontent">教师信息管理</a>
+		</li>
+		<li >
+			<a class="litem-1" href="TeacherAdd.jsp" target="roomcontent">教师添加管理</a>
+		</li>
+	</ul>
+</body>
+
+</html>
